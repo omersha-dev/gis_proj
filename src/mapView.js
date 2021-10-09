@@ -130,7 +130,7 @@ class SimpleMap extends Component {
                         position: "fixed",
                         top: "0",
                         left: "0",
-                        height: "100vh",
+                        height: "90vh",
                         width: "100%",
                         backgroundColor: "rgba(0, 0, 0, 0)",
                         display: "flex",
@@ -187,7 +187,7 @@ class SimpleMap extends Component {
                 <div>
                     <p>ערים:</p>
                     {/* <div style={{maxHeight: "150px", overflowX: "hidden", overflowY: "scroll"}}> */}
-                    <div style={{maxHeight: "750px", overflowX: "hidden", overflowY: "scroll"}}>
+                    <div style={{maxHeight: "650px", overflowX: "hidden", overflowY: "scroll"}}>
                         {
                             this.cities.map(city => {
                                 return (
@@ -206,7 +206,7 @@ class SimpleMap extends Component {
                     </div>
                 </div>
             </div>
-            <div style={{ height: '100vh', width: '75%' }}>
+            <div style={{ height: '90vh', width: '75%' }}>
                 <GoogleMapReact
                 bootstrapURLKeys={{ key: "AIzaSyDU9Djlm04TBLBOhdw3GzMsVHxdmGqxNzk" }}
                 defaultCenter={this.props.center}
